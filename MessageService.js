@@ -8,13 +8,13 @@ module.exports.sendMessage=function(message)
             service: 'Gmail',
             auth: {
                 user: 'scootly23@gmail.com',
-                pass: 'Scott112394'
+                pass: [REDACTED]
             }
         });
 
         let mailOptions = {
             from: "johan", // sender address
-            to: '6518953064@vtext.com', // list of receivers
+            to: [REDACTED]@vtext.com', // list of receivers
             text:  message,// plain text body // html body
         };
         transporter.sendMail(mailOptions, (error, info) => {
